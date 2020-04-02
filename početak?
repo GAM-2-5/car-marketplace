@@ -1,0 +1,6 @@
+a=int(input('konjaža'))
+b=int(input('kilometraža'))
+c=int(input('cijenaža))
+#program treba na temelju navedenih karakteristika ponuditi aute iz baze ponuđenih autiju koji zadovoljavaju uvijete
+#nisam jos siguran kako ću izvesti ovaj kod
+#neznam ni kako ću autu pridružiti sve karakteristike (snaga,cijena,kilometri), a da su lako dostupne

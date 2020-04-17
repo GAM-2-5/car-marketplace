@@ -1,0 +1,53 @@
+#baza autiju
+mycars = { 
+  "car1" : {
+    "name" : "Ford Focus",
+    "year" : 2004,
+    "power": 100,
+    "km":50000,
+    "price":30000,
+  },
+  "car2" : {
+    "name" : "Dacia Sandero",
+    "year" : 2007,
+    "power": 60,
+    "km":20000,
+    "price":20000,
+  },
+  "car3" : {
+    "name" : "BMW M2",
+    "year" : 2010,
+    "power": 240,
+    "km":80000,
+    "price":30000,
+  },
+  "car4" : {
+    "name" : "Subaru Impreza",
+    "year" : 2004,
+    "power": 160,
+    "km":40000,
+    "price":25000,
+  },
+  "car5" : {
+    "name" : "Mitsubishi Lancer",
+    "year" : 2007,
+    "power": 300,
+    "km":250000,
+    "price":18000,
+  },  
+  "car6" : {
+    "name" : "Chevrolet Cammaro",
+    "year" : 2010,
+    "power": 500,
+    "km":50000,
+    "price":50000,
+  }
+}
+#dio programa koji filtrira prema godini snagi cijeni i kilometraži
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+for car in mycars:
+      if mycars[car]['year'] > a and mycars[car]['power'] > b and mycars[car]['km'] < c and mycars[car]['price'] < d :
+            print(mycars[car]['name'])

@@ -1,0 +1,65 @@
+mycars = {
+  "car1" : {
+    "name" : "Ford Focus",
+    "year" : 2004,
+    "power": 100,
+    "km":50000,
+    "price":30000,
+  },
+  "car2" : {
+    "name" : "Dacia Sandero",
+    "year" : 2007,
+    "power": 60,
+    "km":20000,
+    "price":20000,
+  },
+  "car3" : {
+    "name" : "BMW M2",
+    "year" : 2010,
+    "power": 240,
+    "km":80000,
+    "price":30000,
+  },
+  "car4" : {
+    "name" : "Subaru Impreza",
+    "year" : 2004,
+    "power": 160,
+    "km":40000,
+    "price":25000,
+  },
+  "car5" : {
+    "name" : "Mitsubishi Lancer",
+    "year" : 2007,
+    "power": 300,
+    "km":250000,
+    "price":18000,
+  },  
+  "car6" : {
+    "name" : "Chevrolet Cammaro",
+    "year" : 2010,
+    "power": 500,
+    "km":50000,
+    "price":50000,
+  }
+}
+x=input('ako želite brzo pretraživanje yes, ako ne upišite no')
+if x == 'yes' :
+      a=int(input('godina od koje zelite da vaš auto bude mlađi'))
+      b=int(input('minimalna snaga (u konjima)'))
+      c=int(input('maksimalni prijeđeni put(km)'))
+      d=int(input('makisimalna cijena'))
+      for car in mycars:
+            if mycars[car]['year'] > a and mycars[car]['power']-1 > b and mycars[car]['km']-1 < c and mycars[car]['price']-1 < d :
+                  print(mycars[car]['name'])
+else:
+      a=int(input('godina od koje zelite da vaš auto bude mlađi'))
+      a1=int(input('godina od koje zelite da vaš auto bude stariji'))
+      b=int(input('minimalna snaga (u konjima)'))
+      b1=int(input('maksimalna snaga (u konjima)'))
+      c=int(input('maksimalni prijeđeni put(km)'))
+      c1=int(input('minimalini prijeđeni put(km)'))
+      d=int(input('makisimalna cijena'))
+      d1=int(input('minimalna cijena'))
+      for car in mycars:
+            if mycars[car]['year'] > a and mycars[car]['power']-1 > b and mycars[car]['km']-1 < c and mycars[car]['price']-1 < d and mycars[car]['year'] < a1 and mycars[car]['power']+1 < b1 and mycars[car]['km']+1 > c1 and mycars[car]['price']+1 > d1 :
+                  print(mycars[car]['name'])
